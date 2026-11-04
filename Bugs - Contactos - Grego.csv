@@ -1,0 +1,557 @@
+BUG ID,Versión,Navegador,Estado del Reporte,Fecha del Reporte,Descripción del Bug,Pasos para reproducir,Resultado Esperado,Resultado Obtenido,Evidencia,Severidad,Autor,Observaciones,Revisor
+0,,Chrome,Cerrado,23/11/2020,Regristro - falla en ingreso de email,1. Ingresar a la aplicación 2. Ingresar el usuario y contraseña3. Clic en iniciar,Se inicia sesión,No se ingresa a la aplicación,http://prntscr.com/vor1tx,Alta,Juan Perez,,
+1,v1,Firefox,Abierto,03/08/2026,Visualizar Listado Contactos,"Ingresar a la pagina de Contactos
+1. Visualizar grilla de contactos y botones.","El sistema muestra la pantalla:
+Títulos: Contactos
+Tabla con columnas
+Nombre: Nombre del contacto
+Mail: Dirección de correo electrónico del contacto
+Por defecto la grilla está vacía. Se debe visualizar el mensaje: ""No hay contactos guardados""
+Opciones para ordenar los datos por nombre o por mail
+Por defecto, la lista se ordena alfabéticamente por nombre de contacto.
+Opción para agregar nuevo contacto: ""Nuevo Contacto""","El sistema muestra la pantalla:
+Títulos: Contactos
+Tabla con columnas
+Nombre: Nombre del contacto
+Mail: Dirección de correo electrónico del contacto
+SE VISUALIZA UNA COLUMNA EXTRA NO MENCIONADA ANTERIORMENTE LLAMADA ""ACCIONES""
+Por defecto la grilla está vacía. NO SE VISUALIZA el mensaje: ""No hay contactos guardados""
+Opciones para ordenar los datos por nombre o por mail
+Por defecto, la lista se ordena alfabéticamente por nombre de contacto.
+Opción para agregar nuevo contacto: ""Nuevo Contacto""",,BAJA,Gregorio López,,
+2,v1,Firefox,Abierto,12/8/26,Verificar Listado - Boton de orden ascendente de contactos por Nombre,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Matias""
+Mail: ""matias@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Julian""
+Mail: ""Julian@gmail.com""
+Clickear botón Guardar.
+1. Clickear Boton de orden ascendente de contactos por nombre
+
+",Los contactos se ordenan alfabéticamente de forma ascendente según nombre de contacto. ,Los contactos se reordenan sin criterio alfabético.,,BAJA,Gregorio López,,
+3,v1,Firefox,Abierto,12/8/26,Verificar Listado - Boton de orden descendente de contactos por Nombre,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Matias""
+Mail: ""matias@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Julian""
+Mail: ""Julian@gmail.com""
+Clickear botón Guardar
+
+1. Clickear Boton de orden descendente de contactos por nombre",Los contactos se ordenan alfabéticamente de forma descendente según nombre de contacto. ,Los contactos se reordenan sin criterio alfabético.,,BAJA,Gregorio López,,
+4,v1,Firefox,Abierto,12/8/26,Verificar Boton - de orden ascendente de contactos por Mail,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Matias""
+Mail: ""matias@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Julian""
+Mail: ""Julian@gmail.com""
+Clickear botón Guardar
+1. Clickear Boton de orden ascendente de contactos por Mail
+",Los contactos se ordenan alfabéticamente de forma ascendente según dirección de Mail. ,Los contactos se reordenan sin criterio alfabético.,,BAJA,Gregorio López,,
+5,v1,Firefox,Abierto,12/8/26,Verificar Listado - Boton de orden descendente de contactos por Mail,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Matias""
+Mail: ""matias@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Julian""
+Mail: ""Julian@gmail.com""
+Clickear botón Guardar
+1. Clickear Boton de orden descendente de contactos por Mail
+",Los contactos se ordenan alfabéticamente de forma descendente según dirección de Mail. ,Los contactos se reordenan sin criterio alfabético.,,BAJA,Gregorio López,,
+10,v1,Firefox,Abierto,5/8/26,Verificar Alta Nuevo contacto en Campo Nombre con Caracteres especiales,"""1. Ingresar a la página de Contactos.
+2. Clickear botón """"Nuevo Contacto"""".
+3. Completar campo Nombre con caracteres especiales """"!#$%&/()"""".
+4. Completar campo mail: """"gregoriolopez@gmail.com""""
+5. Clickear botón Guardar.""",El sistema emite un mensaje de error indicando que solo se admiten letras,El sistema permite agendar el contacto incluso teniendo caracteres especiales en el campo nombre.,,BAJA,Gregorio López,,
+11,V1,Firefox,Abierto,5/8/26,Verificar Alta Nuevo contacto en Campo Nombre con números,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre con números ""123456"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.",El sistema emite un mensaje de error indicando que solo se admiten letras,El sistema permite agendar el contacto incluso teniendo caracteres números en el campo nombre.,,BAJA,Gregorio López,,
+12,V1,Firefox,Abierto,5/8/26,Verificar Alta Nuevo contacto en Campo Nombre con 35 caracteres.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo con 35 caracteres ""MariaAlejandraDeLasMercedesPazGomez"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.","Se visualiza en campo Nombre:  ""MariaAlejandraDeLasMercedesPazGomez"".","El sistema emite un mensaje de error: ""El nombre del contacto no puede superar los 35 caracteres""",,BAJA,Gregorio López,,
+14,V1,Firefox,Abierto,5/8/26,Verificar Alta Nuevo contacto en Campo Nombre con 36 caracteres.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo con 36 caracteres ""MariahJosefaDeLosAngelesBenitezGomez"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear Guardar","Se visualizan los primeros 35 caracteres ingresados: ""MariaJosefaDeLosAngelesBenitezGomez""","El sistema emite un mensaje de error ""El nombre del contacto no puede superar los 35 caracteres""",,BAJA,Gregorio López,,
+16,V1,Firefox,Abierto,5/8/26,Verificar Alta Nuevo contacto en Campo Nombre vacio.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Dejar campo Nombre vacío.
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clikear botón Guardar
+","El sistema arroja un mensaje de error: ""Este campo es obligatorio.""",El sistema permite agendar contactos con el campo Nombre vacío.,,MEDIA,Gregorio López,,
+21,V1,Firefox,Abierto,5/8/26,Verificar Alta Nuevo contacto en Campo Mail con 35 caracteres segun Anexo A.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Mail.
+4. Completar campo con 35 caracteres incluyendo dominio ""usuarios.pruebas35@dominioemail.com"".
+5. Clickar botón Guardar","Se visualizan 35 caracteres en campo Mail: ""usuarios.pruebas35@dominioemail.com""","El sistema emite un mensaje de error: ""El mail del contacto no puede superar los 35 caracteres""",,MEDIA,Gregorio López,,
+23,V1,Firefox,Abierto,5/8/26,Verificar Alta Nuevo contacto en Campo Mail con 36 caracteres segun Anexo A.,"
+1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Mail.
+4. Completar campo con 36 caracteres incluyendo dominio ""testcase36caracteress@mailserver.net""
+5. Clickear botón Guardar","Se visualizan los primeros 35 caracteres ingresados: ""testcase36caracteress@mailserver.ne""","El sistema emite un mensaje de error: ""El mail del contacto no puede superar los 35 caracteres""",,BAJA,Gregorio López,,
+25,V1,Firefox,Abierto,5/8/26,Validar Alta - Nuevo contacto - Boton Guardar luego de completar los campos oblitatorios.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre: ""Gregorio Lopez"".
+4. Completar campo Mail: ""gregorio@gmail.com"".
+5. Clickear boton ""Guardar"".","Se visualizan los datos del usuario ""Gregorio Lopez"" y ""gregorio@gmail.com"" en la parte superior de la pantalla, en una grilla junto a los botones ""editar"" y ""eliminar"".","Se visualizan los datos del usuario ""Gregorio Lopez"" y ""gregorio@gmail.com"" en la parte superior de la pantalla, en una grilla junto al boton de editar.
+NO SE VISUALIZA EL BOTON DE ELIMINAR",,BAJA,Gregorio López,,
+27,V1,Firefox,Abierto,5/8/26,Validar Alta - Nuevo contacto - Boton Cancelar,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre: ""Gregorio Lopez"".
+4. Completar campo Mail: ""gregorio@gmail.com"".
+5. Clickear boton ""Cancelar"".","El sistema emite un mensaje indicando que se prederán los cambios.
+No se visualizan los datos del usuario en la grilla de la parte superior de la pantalla.","El sistema NO emite un mensaje indicando que se prederán los cambios.
+No se visualizan los datos del usuario en la grilla de la parte superior de la pantalla.",,BAJA,Gregorio López,,
+28,V1,Firefox,Abierto,5/8/26,Visualizar Edicion -  Grilla de contactos.,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com""
+""1. Visualizar Grilla contactos Nombre: Gregorio Mail: gregorio@gmail.com
+2. Visualizar los botones ""Editar"" y ""Eliminar"".","Se visualizan los botones ""Editar"" y ""Eliminar"" junto al usuario ""Gregorio - gregorio@gmail.com"" en la grilla de contactos.","Se visualizan el boton ""Editar"" junto al usuario ""Gregorio - gregorio@gmail.com"" en la grilla de contactos.
+NO SE VISUALIZA EL BOTON  ""Eliminar""
+",,BAJA,Gregorio López,,
+30,V1,Firefox,Abierto,5/8/26,Verificar Edicion - Campo Nombre vacio,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com""
+""1. Clickear botón """"Editar"""" junto al usuario """"Gregorio Lopez - gregorio@gmail.com""""
+2. Borrar texto de campo nombre y dejar vacío.
+3. Clickear boton Guardar.""",El sistema muestra un mensaje informando que el campo Nombre debe completarse.,El sistema permite editar y almacenar contactos con el campo Nombre vacío.,,MEDIA,Gregorio López,,
+32,V1,Firefox,Abierto,5/8/26,Verificar Edicion - Campo Nombre y Mail Vacio,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com""
+1. Clickear botón """"Editar"""" junto al usuario """"Gregorio Lopez - gregorio@gmail.com""""
+2. Borrar texto de campo Nombre y dejar vacío.
+3. Borrar texto de campo Mail y dejar vacío.
+3. Clickear boton Guardar.""",El sistema muestra un mensaje informando que el campo Nombre y el campo Mail deben completarse.,"El sistema muestra un mensaje informando que el campo Mail deben completarse.
+EL SISTEMA NO EMITE NINGÚN MENSAJE INDICANDO QUE EL CAMPO NOMBRE ES OBLIGATORIO",,MEDIA,Gregorio López,,
+35,V1,Firefox,Abierto,5/8/26,Visualizar Baja - Mensaje de Eliminacion,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com""
+hacer click en boton ""Eliminar""
+1. Visualizar del mensaje de eliminacion","El sistema emite un mensaje solicitando la confirmación del usuario sobre estar seguro de querer borrar el contacto: ""Está seguro que quiere borrar el contacto Gregorio Lopez"" junto a  un botón para confirmar y otro boton para cancelar.
+
+",No se visualiza el boton Eliminar.,,BAJA,Gregorio López,,
+36,V1,Firefox,Abierto,5/8/26,Validar Baja - Boton para confimar eliminación de contacto.,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com""
+""1. Clickear botón Eliminar junto al usuario """"Gregorio - gregoriolopez@gmail.com""""
+2. Clickear botón para confirmar eliminación de contacto.""","No se visualizan los datos del usuario ""Gregorio"" en la grilla de la parte superior de la pantalla.
+El contacto ha sido eliminado. ",No se visualiza el boton Eliminar.,,BAJA,Gregorio López,,
+37,V1,Firefox,Abierto,5/8/26,Validar Baja - Boton para cancelar eliminación de contacto.,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com""
+1. Clickear botón Eliminar junto al usuario """"Gregorio - gregoriolopez@gmail.com""""
+2. Clickear botón para cancelar eliminación de contacto.""
+","Los datos del contacto no se elminian.
+Se visualizan los datos del usuario ""Gregorio - gregoriolopez@gmail.com"" en la grilla de la parte superior de la pantalla.",No se visualiza el boton Eliminar.,,BAJA,Gregorio López,,
+34,v1,Firefox,Abierto,7/8/26,Valida - Edicion - Boton Cancelar ,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com""
+""1. Clickear botón """"Editar"""" junto al usuario """"Gregorio Lopez - gregorio@gmail.com""""
+2. Remplazar campo nombre por """"Matias Lopez"""".
+3. Remplazar campo mail por """"matias@gmail.com""""
+4. Clickear boton Cancelar de la sección Editar""","Se visualizan los datos del usuario ""Gregorio Lopez"" y ""gregorio@gmail.com"" en la parte superior de la pantalla en el lugar donde estaba el usuario ""Gregorio Lopez - gregorio@gmail.com"".
+No se edita el contacto. Permanece con sus datos originales.
+
+","Se sobrescriben los datos en el contacto ""Gregorio"".
+Se visualizan los datos: Nombre ""Matias Lopez"" mail ""matias@gmail.com"" en lugar de ""Gregorio"" ""gregorio@gmail.com"".",,MEDIA,Gregorio López,,
+38,V1,Firefox,Abierto,7/8/26,Validar Edicion - Boton editar teniendo 3 contactos almacenados,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Matias""
+Mail: ""matias@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Julian""
+Mail: ""Julian@gmail.com""
+Clickear botón Guardar
+1. Clickear botón ""Editar"" junto al usuario ""Julian - julian@gmail.com""","El sistema despliega un formulario con la información del nombre y mail del contacto seleccionado.
+Se visualizan la posibilidad de edicion de los campos nombre: ""julian"" y mail: ""julian@gmail.com""
+",El sistema despliega un formulario con la información del nombre y mail DEL PRIMER CONTACTO DE LA GRILLA.,,MEDIA,Gregorio López,,
+39,V2,Firefox,Abierto,7/8/26,Visualizar Listado Contactos,"Ingresar a la pagina de Contactos.
+1. Visualizar grilla de contactos y botones.","El sistema muestra la pantalla:
+Títulos: Contactos
+Tabla con columnas
+Nombre: Nombre del contacto
+Mail: Dirección de correo electrónico del contacto
+Por defecto la grilla está vacía. Se debe visualizar el mensaje: ""No hay contactos guardados""
+Opciones para ordenar los datos por nombre o por mail
+Por defecto, la lista se ordena alfabéticamente por nombre de contacto.
+Opción para agregar nuevo contacto: ""Nuevo Contacto""","El sistema muestra la pantalla:
+Títulos: Contactos
+Tabla con columnas
+Nombre: Nombre del contacto
+Mail: Dirección de correo electrónico del contacto
+SE VISUALIZA UNA COLUMNA EXTRA NO MENCIONADA ANTERIORMENTE LLAMADA ""ACCIONES""
+Por defecto la grilla está vacía. Se debe visualizar el mensaje: ""No hay contactos guardados""
+Opciones para ordenar los datos por nombre o por mail
+Por defecto, la lista se ordena alfabéticamente por nombre de contacto.
+Opción para agregar nuevo contacto: ""Nuevo Contacto""",,BAJA,Gregorio López,,
+40,V2,Firefox,Abierto,7/8/26,Verificar Alta Boton Nuevo contacto,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".","El sistema despliega un formulario con la siguiente información
+
+Nombre. Valor por defecto: vacío.
+Mail. Valor por defecto: vacío.
+Botones: ""Guardar"", ""Cancelar""","El sistema despliega un formulario con la siguiente información
+
+Nombre. Valor por defecto: ""Nombre"".
+Mail. Valor por defecto: vacío.
+Botones: ""Guardar"", ""Cancelar""",,BAJA,Gregorio López,,
+41,V2,Firefox,Abierto,7/8/26,Verificar Alta Nuevo contacto en Campo Nombre con Caracteres especiales,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre con caracteres especiales ""!#$%&/()"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.",El sistema emite un mensaje de error indicando que solo se admiten letras,El sistema permite agendar el contacto incluso teniendo caracteres especiales en el campo nombre.,,BAJA,Gregorio López,,
+42,v2,Firefox,Abierto,7/8/26,Verificar Alta Nuevo contacto en Campo Nombre con números,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre con números ""123456"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.",El sistema emite un mensaje de error indicando que solo se admiten letras,El sistema permite agendar el contacto incluso teniendo números en el campo nombre.,,BAJA,Gregorio López,,
+43,v2,Firefox,Abierto,7/8/26,Verificar Alta Nuevo contacto en Campo Nombre con 35 caracteres.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo con 35 caracteres ""MariaAlejandraDeLasMercedesPazGomez"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.","Se visualiza en campo Nombre:  ""MariaAlejandraDeLasMercedesPazGomez"".","El sistema emite un mensaje de error: ""El nombre del contacto no puede superar los 35 caracteres""",,BAJA,Gregorio López,,
+44,v2,Firefox,Abierto,10/8/26,Verificar Alta Nuevo contacto en Campo Nombre con 36 caracteres.,"
+1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Mail.
+4. Completar campo con 36 caracteres incluyendo dominio ""testcase36caracteress@mailserver.net""
+5. Clickear botón Guardar","Se visualizan los primeros 35 caracteres ingresados: ""MariaJosefaDeLosAngelesBenitezGomez""","El sistema emite un mensaje de error: ""El mail del contacto no puede superar los 35 caracteres""",,BAJA,Gregorio López,,
+45,v2,Firefox,Abierto,10/8/26,Verificar Alta Nuevo contacto en Campo Mail con 35 caracteres segun Anexo A.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Mail.
+4. Completar campo con 35 caracteres incluyendo dominio ""usuarios.pruebas35@dominioemail.com"".
+5. Clickar botón Guardar","Se visualizan 35 caracteres en campo Mail: ""usuarios.pruebas35@dominioemail.com""","El sistema emite un mensaje de error: ""El mail del contacto no puede superar los 35 caracteres""",,BAJA,Gregorio López,,
+46,v2,Firefox,Abierto,10/8/26,Verificar Alta Nuevo contacto en Campo Mail con 36 caracteres segun Anexo A.,"
+1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Mail.
+4. Completar campo con 36 caracteres incluyendo dominio ""testcase36caracteress@mailserver.net""
+5. Clickear botón Guardar","Se visualizan los primeros 35 caracteres ingresados: ""testcase36caracteress@mailserver.ne""","El sistema emite un mensaje de error: ""El mail del contacto no puede superar los 35 caracteres""",,BAJA,Gregorio López,,
+47,v2,Firefox,Abierto,10/8/26,Validar Alta - Nuevo contacto - Boton Cancelar,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre: ""Gregorio Lopez"".
+4. Completar campo Mail: ""gregorio@gmail.com"".
+5. Clickear boton ""Cancelar"".","El sistema emite un mensaje indicando que se prederán los cambios.
+No se visualizan los datos del usuario en la grilla de la parte superior de la pantalla.","El sistema NO emite un mensaje indicando que se prederán los cambios.
+No se visualizan los datos del usuario en la grilla de la parte superior de la pantalla.",,MEDIA,gregorio López,,
+48,v2,Firefox,Abierto,10/8/26,Validar - Edicion - Boton Guardar,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com""
+""1. Clickear botón """"Editar"""" junto al usuario """"Gregorio Lopez - gregorio@gmail.com""""
+2. Remplazar campo nombre por """"Matias Lopez"""".
+3. Clickear boton Guardar de la sección Editar""","Se visualizan los datos del usuario ""Matias Lopez"" y ""gregorio@gmail.com"" en la parte superior de la pantalla en el lugar donde estaba el usuario ""Gregorio Lopez - gregorio@gmail.com"".","El sistema emite un mensaje de error: "" Ya existe un contacto con este mail"" al editar el nombre de un contacto.",,BAJA,gregorio López,,
+49,v2,Firefox,Abierto,10/08/26,Validar Edicion - Boton editar teniendo 3 contactos almacenados,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Matias""
+Mail: ""matias@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Julian""
+Mail: ""Julian@gmail.com""
+Clickear botón Guardar
+1. Clickear botón ""Editar"" junto al usuario ""Matias - matias@gmail.com""
+","El sistema despliega un formulario con la inforación del nombre y mail del contacto seleccionado.
+Se visualizan la posibilidad de edicion de los campos nombre: ""Matias"" y mail: ""matias@gmail.com""
+",El sistema despliega un formulario con la información del nombre y mail DEL PRIMER CONTACTO DE LA GRILLA.,,MEDIA,gregorio López,,
+50,v2,Firefox,Abierto,10/8/26,Verificar Listado - Boton de orden ascendente de contactos por Nombre,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Matias""
+Mail: ""matias@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Julian""
+Mail: ""Julian@gmail.com""
+Clickear botón Guardar
+1. Clickear Boton de orden ascendente de contactos por nombre
+",Los contactos se ordenan alfabéticamente de forma ascendente según nombre de contacto. ,Los contactos se reordenan sin criterio alfabético.,,BAJA,gregorio López,,
+51,v2,Firefox,Abierto,10/8/26,Verificar Listado - Boton de orden descendente de contactos por Nombre,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Matias""
+Mail: ""matias@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Julian""
+Mail: ""Julian@gmail.com""
+Clickear botón Guardar
+1. Clickear Boton de orden descendente de contactos por nombre
+
+",Los contactos se ordenan alfabéticamente de forma descendente según nombre de contacto. ,Los contactos se reordenan sin criterio alfabético.,,BAJA,gregorio López,,
+52,v2,Firefox,Abierto,10/8/26,Verificar Boton - de orden ascendente de contactos por Mail,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Matias""
+Mail: ""matias@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Julian""
+Mail: ""Julian@gmail.com""
+Clickear botón Guardar
+
+1. Clickear Boton de orden ascendente de contactos por Mail",Los contactos se ordenan alfabéticamente de forma descendente según nombre de contacto. ,Los contactos se reordenan sin criterio alfabético.,,BAJA,gregorio López,,
+53,v2,Firefox,Abierto,10/8/26,Verificar Listado - Boton de orden descendente de contactos por Mail,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Matias""
+Mail: ""matias@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Julian""
+Mail: ""Julian@gmail.com""
+Clickear botón Guardar
+
+1. Clickear Boton de orden descendente de contactos por Mail",Los contactos se ordenan alfabéticamente de forma descendente según dirección de Mail. ,Los contactos se reordenan sin criterio alfabético.,,BAJA,gregorio López,,
+54,v2,Firefox,Abierto,10/8/26,Visualizar Listado - Orden alfabético por Nombre de lista de contactos por defecto,"Ingresar a la página de Contactos.
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Gregorio""
+Mail: ""gregorio@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Matias""
+Mail: ""matias@gmail.com"";
+Clickear botón Guardar
+Clickear botón ""Nuevo Contacto"".
+Agendar nuevo contacto.
+Nombre: ""Julian""
+Mail: ""Julian@gmail.com""
+Clickear botón Guardar
+1. Visualizar el orden por defecto de la lista de contactos.
+","Por defecto, la lista se ordena alfabéticamente por nombre de contacto.",La lista de contactos se ordena sin ningún criterio aparente.,,BAJA,gregorio López,,
+55,v3,Firefox,Abierto,14/8/26,Visualizar Listado Contactos,"Ingresar a la pagina de Contactos
+1. Visualizar grilla de contactos y botones.","El sistema muestra la pantalla:
+Títulos: Contactos
+Tabla con columnas
+Nombre: Nombre del contacto
+Mail: Dirección de correo electrónico del contacto
+Por defecto la grilla está vacía. Se debe visualizar el mensaje: ""No hay contactos guardados""
+Opciones para ordenar los datos por nombre o por mail
+Por defecto, la lista se ordena alfabéticamente por nombre de contacto.
+Opción para agregar nuevo contacto: ""Nuevo Contacto""","El sistema muestra la pantalla:
+Títulos: Contactos
+Tabla con columnas
+Nombre: Nombre del contacto
+Mail: Dirección de correo electrónico del contacto
+SE VISUALIZA UNA COLUMNA EXTRA NO MENCIONADA ANTERIORMENTE LLAMADA ""ACCIONES""
+Por defecto la grilla está vacía. NO SE VISUALIZA el mensaje: ""No hay contactos guardados""
+Opciones para ordenar los datos por nombre o por mail
+Por defecto, la lista se ordena alfabéticamente por nombre de contacto.
+Opción para agregar nuevo contacto: ""Nuevo Contacto""",,BAJA,Gregorio López,,
+56,v3,Firefox,Abierto,14/8/26,Verificar Alta Nuevo contacto en Campo Nombre con Letras Mayúsculas,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre con letras mayúsculas ""GREGORIO"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.","El nombre se visualiza en letras mayúsculas.
+","El nombre se visualiza en letras mayúsculas.
+AL GUARDAR EL CONACTO SE OMITE LA ÚLTIMA LETRA INGRESADA EN EL CAMPO NOMBRE",,ALTA,Gregorio López,,
+57,v3,Firefox,Abierto,14/8/26,Verificar Alta Nuevo contacto en Campo Nombre con Letras minúsculas,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre con letras minúsculas ""gregorio"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.","El nombre se visualiza en letras minúsculas.
+","El nombre se visualiza en letras minúsculas.
+AL GUARDAR EL CONACTO SE OMITE LA ÚLTIMA LETRA INGRESADA EN EL CAMPO NOMBRE",,ALTA,Gregorio López,,
+58,v3,Firefox,Abierto,14/8/26,Verificar Alta Nuevo contacto en Campo Nombre con Caracteres especiales,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre con caracteres especiales ""!#$%&/()"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.",El sistema emite un mensaje de error indicando que solo se admiten letras,"El sistema permite agendar el contacto incluso teniendo caracteres especiales en el campo nombre.
+AL GUARDAR EL CONACTO SE OMITE LA ÚLTIMA LETRA INGRESADA EN EL CAMPO NOMBRE",,ALTA,Gregorio López,,
+59,v3,Firefox,Abierto,14/8/26,Verificar Alta Nuevo contacto en Campo Nombre con números,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre con números ""123456"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.",El sistema emite un mensaje de error indicando que solo se admiten letras,"El sistema permite agendar el contacto incluso teniendo caracteres numéricos en el campo nombre.
+AL GUARDAR EL CONACTO SE OMITE LA ÚLTIMA LETRA INGRESADA EN EL CAMPO NOMBRE",,ALTA,Gregorio López,,
+60,v3,Firefox,Abierto,14/8/26,Verificar Alta Nuevo contacto en Campo Nombre con 35 caracteres.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo con 35 caracteres ""MariaAlejandraDeLasMercedesPazGomez"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.","Se visualiza en campo Nombre:  ""MariaAlejandraDeLasMercedesPazGomez"".","El sistema emite un mensaje de error: ""El nombre del contacto no puede superar los 35 caracteres""",,BAJA,Gregorio López,,
+61,v3,Firefox,Abierto,14/8/26,Verificar Alta Nuevo contacto en Campo Nombre con 34 caracteres.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Nombre.
+4. Completar campo con 34 caracteres ""JuanFranciscoDeLaCruzMartinezGomez""
+5. Clickear botón Guardar.
+","Se visualiza en campo Nombre: JuanFranciscoDeLaCruzMartinezGomez""","Se visualiza en campo Nombre: JuanFranciscoDeLaCruzMartinezGomez""
+AL GUARDAR EL CONACTO SE OMITE LA ÚLTIMA LETRA INGRESADA EN EL CAMPO NOMBRE",,ALTA,Gregorio López,,
+62,v3,Firefox,Abierto,14/8/26,Verificar Alta Nuevo contacto en Campo Nombre con 36 caracteres.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Nombre.
+4. Completar campo con 36 caracteres ""MariahJosefaDeLosAngelesBenitezGomez"".
+5. Clickear botón Guardar.
+","Se visualizan los primeros 35 caracteres ingresados: ""MariaJosefaDeLosAngelesBenitezGomez""","El sistema emite un mensaje de error ""El nombre del contacto no puede superar los 35 caracteres""",,BAJA,Gregorio López,,
+63,v3,Firefox,Abierto,14/8/26,Verificar Alta Nuevo contacto en Campo Nombre con Letras + espacios,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Nombre.
+4. Completar campo con letras + espacios ""gregorio lopez"".
+5. Clickear botón Guardar.
+","La respuesta se visualiza en letras y espacios: ""gregorio lopez""","La respuesta se visualiza en letras y espacios: ""gregorio lope""
+AL GUARDAR EL CONACTO SE OMITE LA ÚLTIMA LETRA INGRESADA EN EL CAMPO NOMBRE",,ALTA,Gregorio López,,
+64,v3,Firefox,Abierto,14/8/26,Verificar Alta Nuevo contacto en Campo Mail con 35 caracteres segun Anexo A.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo nombre ""Gregorio""
+4. Completar campo con 35 caracteres incluyendo dominio ""usuarios.pruebas35@dominioemail.com"".
+5. Clickar botón Guardar","Se visualizan 35 caracteres en campo Mail: ""usuarios.pruebas35@dominioemail.com""","El sistema emite un mensaje de error: ""El mail del contacto no puede superar los 35 caracteres""",,BAJA,Gregorio López,,
+65,v3,Firefox,Abierto,14/8/26,Verificar Alta Nuevo contacto en Campo Mail con 36 caracteres segun Anexo A.,"
+1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Mail.
+4. Completar campo con 36 caracteres incluyendo dominio ""testcase36caracteress@mailserver.net""
+5. Clickear botón Guardar","Se visualizan los primeros 35 caracteres ingresados: ""testcase36caracteress@mailserver.ne""","El sistema emite un mensaje de error: ""El mail del contacto no puede superar los 35 caracteres""",,BAJA,Gregorio López,,
+66,v3,Firefox,Abierto,14/8/26,Validar - Edicion - Boton Guardar,"""Ingresar a la página de Contactos.
+Clickear botón """"Nuevo Contacto"""".
+Agendar nuevo contacto.
+Nombre: """"Gregorio""""
+Mail: """"gregorio@gmail.com""""""
+1. Clickear botón ""Editar"" junto al usuario ""Gregorio Lopez - gregorio@gmail.com""
+2. Remplazar campo nombre por ""Matias Lopez"".
+3. Remplazar campo mail por ""matias@gmail.com""
+4. Clickear boton Guardar de la sección Editar","Se visualizan los datos del usuario ""Matias Lopez"" y ""matias@gmail.com"" en la parte superior de la pantalla en el lugar donde estaba el usuario ""Gregorio Lopez - gregorio@gmail.com"".","Los datos del contacto ""Matias Lopez- matias@gmail.com"" se visualizan en la grilla como un nuevo contacto, en lugar de remplazar el contacto que se estaba editando.",,MEDIA,Gregorio López,,
+68,V FINAL,Firefox,Abierto,19/8/26,Visualizar Listado Contactos,"Ingresar a la pagina de Contactos
+1. Visualizar grilla de contactos y botones.","El sistema muestra la pantalla:
+Títulos: Contactos
+Tabla con columnas
+Nombre: Nombre del contacto
+Mail: Dirección de correo electrónico del contacto
+Por defecto la grilla está vacía. Se debe visualizar el mensaje: ""No hay contactos guardados""
+Opciones para ordenar los datos por nombre o por mail
+Por defecto, la lista se ordena alfabéticamente por nombre de contacto.
+Opción para agregar nuevo contacto: ""Nuevo Contacto""","El sistema muestra la pantalla:
+Títulos: Contactos
+Tabla con columnas
+Nombre: Nombre del contacto
+Mail: Dirección de correo electrónico del contacto
+SE VISUALIZA UNA COLUMNA EXTRA NO MENCIONADA ANTERIORMENTE LLAMADA ""ACCIONES""
+Por defecto la grilla está vacía. Se debe visualizar el mensaje: ""No hay contactos guardados""
+Opciones para ordenar los datos por nombre o por mail
+Por defecto, la lista se ordena alfabéticamente por nombre de contacto.
+Opción para agregar nuevo contacto: ""Nuevo Contacto""",,BAJA,gregorio López,,
+77,V FINAL,Chrome,Abierto,19/8/26,Verificar Alta Nuevo contacto en Campo Nombre con Caracteres especiales,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre con caracteres especiales ""!#$%&/()"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.",El sistema emite un mensaje de error indicando que solo se admiten letras,El sistema permite agendar el contacto incluso teniendo caracteres especiales en el campo nombre.,,BAJA,gregorio López,,
+78,V FINAL,Chrome,Abierto,19/8/26,Verificar Alta Nuevo contacto en Campo Nombre con números,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo Nombre con números ""123456"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.",El sistema emite un mensaje de error indicando que solo se admiten letras,El sistema permite agendar el contacto incluso teniendo caracteres numéricos en el campo nombre.,,BAJA,gregorio López,,
+79,V FINAL,Chrome,Abierto,19/8/26,Verificar Alta Nuevo contacto en Campo Nombre con 35 caracteres.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Completar campo con 35 caracteres ""MariaAlejandraDeLasMercedesPazGomez"".
+4. Completar campo mail: ""gregoriolopez@gmail.com""
+5. Clickear botón Guardar.","Se visualiza en campo Nombre:  ""MariaAlejandraDeLasMercedesPazGomez"".","El sistema emite un mensaje de error: ""El nombre del contacto no puede superar los 35 caracteres""",,BAJA,gregorio López,,
+81,V FINAL,Chrome,Abierto,19/8/26,Verificar Alta Nuevo contacto en Campo Nombre con 36 caracteres.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Nombre.
+4. Completar campo con 36 caracteres ""MariahJosefaDeLosAngelesBenitezGomez"".
+5. Clickear botón Guardar.
+","Se visualizan los primeros 35 caracteres ingresados: ""MariaJosefaDeLosAngelesBenitezGomez""","El sistema emite un mensaje de error: ""El nombre del contacto no puede superar los 35 caracteres""",,BAJA,gregorio López,,
+88,V FINAL,Chrome,Abierto,19/8/26,Verificar Alta Nuevo contacto en Campo Mail con 35 caracteres segun Anexo A.,"1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Mail.
+4. Completar campo con 35 caracteres incluyendo dominio ""usuarios.pruebas35@dominioemail.com"".
+5. Clickar botón Guardar","Se visualizan 35 caracteres en campo Mail: ""usuarios.pruebas35@dominioemail.com""","El sistema emite un mensaje de error: ""El mail del contacto no puede superar los 35 caracteres""",,BAJA,gregorio López,,
+90,V FINAL,Chrome,Abierto,19/8/26,Verificar Alta Nuevo contacto en Campo Mail con 36 caracteres segun Anexo A.,"
+1. Ingresar a la página de Contactos.
+2. Clickear botón ""Nuevo Contacto"".
+3. Clickear campo Mail.
+4. Completar campo con 36 caracteres incluyendo dominio ""testcase36caracteress@mailserver.net""
+5. Clickear botón Guardar","Se visualizan los primeros 35 caracteres ingresados: ""testcase36caracteress@mailserver.ne""","El sistema emite un mensaje de error: ""El mail del contacto no puede superar los 35 caracteres""",,BAJA,gregorio López,,
